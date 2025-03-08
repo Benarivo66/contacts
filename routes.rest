@@ -1,0 +1,3 @@
+GET http://localhost:3000/contacts # the request above returns a json object with all the contacts available in the database
+
+GET http://localhost:3000/contacts/:id # the request above returns a json object with a single contact whose id is specified
