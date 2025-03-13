@@ -8,6 +8,14 @@ const cors = require("cors");
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
+const corsOptions = {
+  origin: [process.env.HOST], 
+  optionsSuccessStatus: 200, 
+};
+
+app.use(cors(corsOptions));
+
+
 app.use(cors());
 
 app.use(bodyParser.json())
@@ -24,5 +32,5 @@ const port = process.env.PORT;
 const host = process.env.HOST;
 
 app.listen(port, () => {
-  console.log(`app listening on ${host}:${port}`);
+  console.log(`app listening on ${host}`);
 });

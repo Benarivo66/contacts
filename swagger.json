@@ -5,10 +5,10 @@
     "description": "API documentation",
     "version": "1.0.0"
   },
-  "host": "https://contacts-j01x.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {

@@ -5,7 +5,7 @@ const doc = {
     title: 'Contacts',
     description: 'API documentation',
   },
-  host: 'https://contacts-j01x.onrender.com',
+  host: process.env.HOST,
   schemes: ['http'],
 };
 
