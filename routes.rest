@@ -1,3 +1,9 @@
 GET http://localhost:3000/contacts # the request above returns a json object with all the contacts available in the database
 
 GET http://localhost:3000/contacts/:id # the request above returns a json object with a single contact whose id is specified
+
+POST http://localhost:3000/contacts/ # the request creates a new contact by filling the following fields: firstName, lastName, email, favoriteColor, and birthday and returns a json object
+
+PUT http://localhost:3000/contacts/:id # the request updates a contact whose id is specified by filling one or more of the following: firstName, lastName, email, favoriteColor, and birthday and returns a json object
+
+DELETE http://localhost:3000/contacts/:id # the request deletes a contact whose id is specified and returns a json object
